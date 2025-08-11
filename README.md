@@ -129,6 +129,5 @@ Email: [shreyachauhanwork16@gmail.com](mailto:shreyachauhanwork16@gmail.com)
 * Ministry of New and Renewable Energy, Government of India – Solar Data 2023.
 * Indian E-Waste (Management) Rules, EPR Policy 2023.
 
-````
 
 ---
