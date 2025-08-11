@@ -1,42 +1,42 @@
 # ZEN - Zero Emissions Node AI System
 
-**Author:** Shreya Chauhan
-**Email:** [shreyachauhanwork16@gmail.com](mailto:shreyachauhanwork16@gmail.com)
+**Author:** Shreya Chauhan  
+**Email:** shreyachauhanwork16@gmail.com  
 **Location:** Delhi, India
 
 ---
 
 ## Overview
 
-**ZEN (Zero Emissions Node)** is an innovative AI inference framework designed to operate **strictly within ecological boundaries** by using only renewable energy inputs such as solar and wind. It challenges the conventional “always-on” AI computation model by implementing a **constraint-bounded scheduler** that dynamically decides when to run, pause, or offload AI tasks based on **real-time clean energy availability** and battery levels.
+ZEN (Zero Emissions Node) is an innovative AI inference framework designed to operate strictly within ecological boundaries by using only renewable energy inputs such as solar and wind. It challenges the conventional “always-on” AI computation model by implementing a constraint-bounded scheduler that dynamically decides when to run, pause, or offload AI tasks based on real-time clean energy availability and battery levels.
 
 ZEN’s architecture prioritizes environmental responsibility by:
 
-* **Eliminating fallback on fossil fuels** during energy shortages.
-* **Offloading computation to low-power fog nodes** to maintain service continuity.
-* **Reducing e-waste through modular hardware reuse** and lifecycle management.
+- Eliminating fallback on fossil fuels during energy shortages.
+- Offloading computation to low-power fog nodes to maintain service continuity.
+- Reducing e-waste through modular hardware reuse and lifecycle management.
 
-This project presents a replicable and enforceable model for sustainable AI deployment aligned with **SDG 7 (Affordable and Clean Energy)**, **SDG 13 (Climate Action)**, and **SDG 15 (Life on Land)**.
+This project presents a replicable and enforceable model for sustainable AI deployment aligned with **SDG 7 (Affordable and Clean Energy), SDG 13 (Climate Action), and SDG 15 (Life on Land).**
 
 ---
 
 ## Features
 
-* **Renewable-Only Operation:** AI inference tasks run only when solar or wind energy exceeds thresholds.
-* **Rule-Based Scheduler:** Real-time decision logic dynamically manages workloads as Light or Heavy tasks.
-* **Fog Node Offloading:** Utilizes decentralized, low-power devices (e.g., Raspberry Pi) to process overflow tasks.
-* **E-Waste Mitigation:** Modular upgrades and end-of-life repurposing reduce electronic waste.
-* **Simulation & Visualization:** Python-based demo simulates scheduler behavior with synthetic renewable data.
-* **Failover Strategies:** Battery reserves and cold-start fog nodes ensure service resilience without fossil fallback.
+- **Renewable-Only Operation:** AI inference tasks run only when solar or wind energy exceeds thresholds.
+- **Rule-Based Scheduler:** Real-time decision logic dynamically manages workloads as Light or Heavy tasks.
+- **Fog Node Offloading:** Utilizes decentralized, low-power devices (e.g., Raspberry Pi) to process overflow tasks.
+- **E-Waste Mitigation:** Modular upgrades and end-of-life repurposing reduce electronic waste.
+- **Simulation & Visualization:** Python-based demo simulates scheduler behavior with synthetic renewable data.
+- **Failover Strategies:** Battery reserves and cold-start fog nodes ensure service resilience without fossil fallback.
 
 ---
 
 ## System Architecture
 
-1. **Energy Input:** Monitored solar and wind power with LiFePO₄ battery buffering; no fossil fallback.
-2. **Scheduler:** Decision tree uses solar %, battery %, and task type to choose from `RUN_LOCAL`, `OFFLOAD`, or `PAUSE`.
-3. **Fog Nodes:** Low-power units with heartbeat monitoring and load balancing.
-4. **E-Waste Protocol:** Tracks device lifecycle and follows India’s 2023 E-Waste EPR policy for recycling.
+- **Energy Input:** Monitored solar and wind power with LiFePO₄ battery buffering; no fossil fallback.
+- **Scheduler:** Decision tree uses solar %, battery %, and task type to choose from RUN_LOCAL, OFFLOAD, or PAUSE.
+- **Fog Nodes:** Low-power units with heartbeat monitoring and load balancing.
+- **E-Waste Protocol:** Tracks device lifecycle and follows India’s 2023 E-Waste EPR policy for recycling.
 
 ---
 
@@ -44,35 +44,39 @@ This project presents a replicable and enforceable model for sustainable AI depl
 
 ### Prerequisites
 
-* Python 3.8+
-* Flask
-* matplotlib
-* fpdf
-
+- Python 3.8 or higher
+- Required Python packages:
+  
 ```bash
 pip install flask matplotlib fpdf
-```
+````
 
 ### Running the Simulation Demo
 
-1. Clone this repository:
+Clone this repository:
 
 ```bash
 git clone https://github.com/shreya02x/ZEN-Demo-.git
 cd ZEN-Demo-
 ```
 
-2. Run the scheduler and fog node simulation:
+Run the scheduler simulation and generate the report:
 
 ```bash
-python zen_trl6_plus_report.py
+python zen_demo.py
 ```
 
-3. Outputs:
+Then generate detailed reports and visualizations:
 
-* `zen_trl6_run.csv` — Log of scheduler decisions over simulated run.
-* `zen_trl6_actions.png` — Visualization of solar, battery, and task actions.
-* `zen_trl6_plus_report.pdf` — Automatically generated report combining results.
+```bash
+python zen_report.py
+```
+
+### Outputs
+
+* `zen_run.csv` — Log of scheduler decisions over simulated run.
+* `zen_actions.png` — Visualization plot of solar, battery, and scheduler actions.
+* `zen_report.pdf` — Automatically generated comprehensive report combining results.
 
 ---
 
@@ -83,7 +87,7 @@ python zen_trl6_plus_report.py
 * 10% paused due to insufficient clean energy.
 * 10% deferred due to fog node unavailability.
 
-These results confirm ZEN’s ability to enforce ecological constraints **without compromising AI service continuity**.
+These results confirm ZEN’s ability to enforce ecological constraints without compromising AI service continuity.
 
 ---
 
@@ -98,15 +102,15 @@ These results confirm ZEN’s ability to enforce ecological constraints **withou
 
 ## Impact & Use Cases
 
-* **Rural education & labs:** Solar-driven AI services in off-grid areas.
+* **Rural Education & Labs:** Solar-driven AI services in off-grid areas.
 * **Green Data Hubs:** Clean AI compute zones for governments and enterprises.
-* **Low network regions:** Decentralized fog computing reduces cloud dependency.
+* **Low Network Regions:** Decentralized fog computing reduces cloud dependency.
 
 ---
 
 ## License
 
-This project is released under the **MIT License**.
+This project is released under the MIT License.
 
 ---
 
@@ -124,5 +128,7 @@ Email: [shreyachauhanwork16@gmail.com](mailto:shreyachauhanwork16@gmail.com)
 * Satyanarayanan et al., VM-Based Cloudlets in Mobile Computing.
 * Ministry of New and Renewable Energy, Government of India – Solar Data 2023.
 * Indian E-Waste (Management) Rules, EPR Policy 2023.
+
+````
 
 ---
