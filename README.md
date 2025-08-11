@@ -2,7 +2,7 @@
 
 **Author:** Shreya Chauhan  
 **Email:** shreyachauhanwork16@gmail.com  
-**Location:** Delhi, India
+**Location:** Delhi, India  
 
 ---
 
@@ -110,7 +110,8 @@ These results confirm ZEN’s ability to enforce ecological constraints without 
 
 ## License
 
-This project is released under the MIT License.
+All Rights Reserved.
+No part of this repository, its code, or associated documentation may be used, reproduced, or distributed without prior written permission from the author.
 
 ---
 
@@ -129,5 +130,6 @@ Email: [shreyachauhanwork16@gmail.com](mailto:shreyachauhanwork16@gmail.com)
 * Ministry of New and Renewable Energy, Government of India – Solar Data 2023.
 * Indian E-Waste (Management) Rules, EPR Policy 2023.
 
+```
 
----
+```
